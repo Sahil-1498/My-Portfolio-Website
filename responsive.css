@@ -7,6 +7,7 @@
     
     * {
         font-size: 14px;
+        margin: 0;
     }
     
     /* Header adjustments */
@@ -14,6 +15,7 @@
         min-height: 60px;
         max-height: 60px;
         padding: 0 5px;
+        width: 100%;
     }
     
     .logo {
@@ -21,10 +23,6 @@
         margin-left: 5px;
     }
     
-    .nav-opt {
-        width: auto;
-        margin-right: 5px;
-    }
     
     .nav-opt a {
         height: 40px;
@@ -44,29 +42,57 @@
     }
     
     /* Social links adjustments */
-    .socio-links {
-        flex-direction: row;
-        top: auto;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        justify-content: space-around;
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 5px;
-        border-radius: 25px;
+    .socio-links{
+        height: 160px;
+        width: 50px;
+        background-color: #ffffff00;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 10px;
+        border: 0px solid #ffffff00;
+        backdrop-filter: blur(5px);
+        position: fixed;
+        z-index: 1000;
     }
     
-    .socio-links a {
-        height: 35px;
-        width: 35px;
-        font-size: 25px;
+    .socio-links a{
+        height: 40px;
+        width: 40px;
+        font-size: 50px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        display: flex;
+        place-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 4px;
     }
+    
+    .fa-linkedin, .fa-square-facebook{
+        color: #092062;
+        font-size: 40px;
+    }
+    
+    .fa-square-whatsapp{
+        color: #08ff00;
+        font-size: 40px;
+    
+    }
+    
+    .fa-square-github{
+        color: black;
+        font-size: 40px;
+    }
+    
     
     /* Hero section adjustments */
     .hero-sec {
         flex-direction: column-reverse;
         height: auto;
+        width: 100%;
         padding: 20px 0;
     }
     
@@ -76,6 +102,7 @@
     }
     
     .hero-left {
+        height: 300px;
         font-size: 16px;
         text-align: center;
         padding-top: 30px;
@@ -84,6 +111,7 @@
     .hero-right {
         height: 300px;
         padding-top: 0;
+        border: 1px solid rgba(255, 255, 255, 0);
     }
     
     .divv {
@@ -92,18 +120,22 @@
     }
     
     .divv{
-        position: absolute;
-        height: 45vh;
-        width: 45vh;
+        position: fixed;
+        height: 40vh;
+        width: 40vh;
+        height: 250px;
+        width: 250px;
         /* background-color: #ffd500; */
-        background-color: #569aff;
-        top: 48%;
+        background-color: #56b6ff;
+        top: 50%;
         left: 50%;
         border-radius: 50%;
-        transform: translate(-50%, -48%);
+        transform: translate(-50%, -50%);
         outline-offset: 1vh;
+        outline-offset: 10px;
         /* outline: 1vw dotted rgb(255, 145, 0); */
         outline: 1vw dotted #4969f9;
+        outline: 10px dotted #4969f9;
         animation-name: rotateb;
         animation-duration: 20s;
         animation-iteration-count: infinite;
@@ -115,15 +147,28 @@
 
     .imgs{
         z-index: 2;
-        height: 110%;
-        width: 70%;
+        height: 250px;
+        width: 250px;
         display: flex;
+        border-radius: 50%;
         justify-content: center;
         filter: drop-shadow(0 4px 2px rgb(0, 0, 0));
         position: relative;
-        top: 3vh;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0);
+        top: 2.5vh;
     }
 
+    /* .imgs img{
+        height: 90px;
+        width: 90px;
+    } */
+
+
+    .imgs img{
+        height: 100%;
+        width: 100%;
+    }
 
     .res-down {
         width: 150px;
@@ -135,6 +180,7 @@
     /* Education section adjustments */
     .b1 {
         height: auto;
+        width: 100%;
         padding: 20px 0;
     }
     
@@ -168,6 +214,7 @@
     /* Experience section adjustments */
     .b2 {
         height: auto;
+        width: 100%;
         padding: 20px 0;
     }
     
@@ -195,6 +242,7 @@
     /* Projects section adjustments */
     .b3 {
         height: auto;
+        width: 100%;
         padding: 20px 0;
     }
     
@@ -215,6 +263,7 @@
     /* Excel projects section adjustments */
     .b4 {
         height: auto;
+        width: 100%;
         padding: 20px 0;
     }
     
@@ -233,11 +282,14 @@
     }
     
     .exl-title {
+        height: 20px;
         font-size: 16px;
     }
     
     .exl-frame iframe, .exl-frame video {
         height: 300px;
+        height: fit-content;
+        background-color: #00d9ff;
     }
     
     /* Skills section adjustments */
@@ -273,6 +325,7 @@
     /* Footer adjustments */
     .footer {
         height: auto;
+        width: 100%;
         padding: 20px 0;
     }
     
@@ -382,26 +435,30 @@
         display: none;
         position: absolute;
         top: 60px; /* Height of header */
-        right: 1vh;
+        right: 0px;
         background-color: #031f4f;
-        background-color: #ffffff90;
+        background-color: #747373a4;
+        backdrop-filter: blur(10px);
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
         flex-direction: column;
-        width: 200px;
-        padding: 10px;
-        z-index: 1000;
+        width: 210px;
+        padding: 0 1px;
+        z-index: 1000;       
     }
 
     /* Show nav-opt when active class is added */
     .nav-opt.active {
         display: flex;
+        justify-content: center;
+        border: 1px solid white;
+        backdrop-filter: blur(10px);
     }
 
     /* Style hamburger icon */
     .hamburger {
         display: block;
-        font-size: 24px;
+        font-size: 30px;
         color: #0048ff;
         cursor: pointer;
         padding: 10px;
@@ -415,32 +472,74 @@
         justify-content: flex-start;
         width: 100%;
         height: auto;
-        padding: 12px 15px;
-        margin: 5px 0;
-        border-radius: 5px;
+        padding: 5px;
         border: none;
+        border-radius: 5px;
         font-size: 16px;
         text-align: left;
+    }
+
+    .nav-opt a:hover{
+        background: #302f2f90;
     }
 
     /* Add text next to icons */
     .nav-opt a::after {
         content: attr(title);
+        border: 1px solid rgba(255, 255, 255, 0);
         margin-left: 10px;
-        color: #0048ff;
+        font-weight: 700;
+        color: #ffffff;
     }
+
+    .nav-opt a i{
+        height: 50px;
+        width: 50px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        font-size: 27px;
+        border: 4px solid rgb(0, 135, 254);
+        z-index: 100;
+        background: linear-gradient(to top right, #030365, #00d9ff);
+    background-size: 300%; /* Makes gradient larger for smooth animation */
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Makes the text itself transparent */
+    }
+
 
     /* Style the HIRE ME button */
     .spl-btn {
         width: 100%;
-        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #00000000;
     }
 
     .hr-me button {
         width: 100%;
         height: 40px;
-        font-size: 14px;
+        font-size: 20px;
+        font-weight: 700;
     }
+
+    .gear-bg{
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+.edu-title span,
+.exp-title span,
+.proj-title span,
+.skill-head span{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+
+
 
     /* Hide hamburger on larger screens */
     @media only screen and (min-width: 477px) {
