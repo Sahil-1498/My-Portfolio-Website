@@ -1,0 +1,451 @@
+/* Responsive CSS for screens less than 476px */
+@media only screen and (max-width: 476px) {
+    /* General adjustments */
+    body {
+        overflow-x: hidden;
+    }
+    
+    * {
+        font-size: 14px;
+    }
+    
+    /* Header adjustments */
+    header {
+        min-height: 60px;
+        max-height: 60px;
+        padding: 0 5px;
+    }
+    
+    .logo {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    
+    .nav-opt {
+        width: auto;
+        margin-right: 5px;
+    }
+    
+    .nav-opt a {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        border-width: 2px;
+    }
+    
+    .spl-btn {
+        width: auto;
+    }
+    
+    .hr-me button {
+        height: 40px;
+        width: 80px;
+        font-size: 12px;
+    }
+    
+    /* Social links adjustments */
+    .socio-links {
+        flex-direction: row;
+        top: auto;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px;
+        border-radius: 25px;
+    }
+    
+    .socio-links a {
+        height: 35px;
+        width: 35px;
+        font-size: 25px;
+    }
+    
+    /* Hero section adjustments */
+    .hero-sec {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .hero-left, .hero-right {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .hero-left {
+        font-size: 16px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .hero-right {
+        height: 300px;
+        padding-top: 0;
+    }
+    
+    .divv {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .divv{
+        position: absolute;
+        height: 45vh;
+        width: 45vh;
+        /* background-color: #ffd500; */
+        background-color: #569aff;
+        top: 48%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -48%);
+        outline-offset: 1vh;
+        /* outline: 1vw dotted rgb(255, 145, 0); */
+        outline: 1vw dotted #4969f9;
+        animation-name: rotateb;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate-reverse; */
+        /* animation-timing-function: ease; */
+        animation-fill-mode:backwards;
+    }
+
+
+    .imgs{
+        z-index: 2;
+        height: 110%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(0 4px 2px rgb(0, 0, 0));
+        position: relative;
+        top: 3vh;
+    }
+
+
+    .res-down {
+        width: 150px;
+        height: 45px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    
+    /* Education section adjustments */
+    .b1 {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .edu-grid {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .strd {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .std-head {
+        height: 120px;
+        width: 120px;
+        margin: 0 auto;
+    }
+    
+    .dnfrm, .edu-title h1 {
+        font-size: 18px;
+    }
+    
+    .strd button {
+        width: 60%;
+        font-size: 14px;
+    }
+    
+    /* Experience section adjustments */
+    .b2 {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .exp-hold {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+    }
+    
+    .exps {
+        width: 95%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .jb-logo {
+        height: 200px;
+    }
+    
+    .job-role {
+        height: auto;
+        padding: 15px;
+    }
+    
+    /* Projects section adjustments */
+    .b3 {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .projects {
+        width: 95%;
+        height: auto;
+    }
+    
+    .projects iframe {
+        height: 300px;
+        width: 100%;
+    }
+    
+    .projects h3, .projects p, .projects ul, .projects p a {
+        font-size: 16px;
+    }
+    
+    /* Excel projects section adjustments */
+    .b4 {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .exl-wrks {
+        height: auto;
+        flex-direction: column;
+        overflow-x: hidden;
+        padding: 10px 0;
+    }
+    
+    .exl-frame {
+        flex: 0 0 auto;
+        width: 95%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .exl-title {
+        font-size: 16px;
+    }
+    
+    .exl-frame iframe, .exl-frame video {
+        height: 300px;
+    }
+    
+    /* Skills section adjustments */
+    .myskill {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 95%;
+    }
+    
+    .skil-box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .skill-head {
+        grid-column: span 1;
+        font-size: 18px;
+    }
+    
+    .skill-img {
+        height: 80px;
+        width: 80px;
+        margin: 0 auto;
+    }
+    
+    .skil-box button {
+        width: 70%;
+        font-size: 14px;
+    }
+    
+    /* Footer adjustments */
+    .footer {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    
+    .copyright {
+        padding: 20px 0;
+    }
+    
+    /* Hide some elements on mobile */
+    .abutme {
+        display: none;
+    }
+    
+    /* Adjust all section titles */
+    .edu-title h1, .exp-title h1, .proj-title h1, .skill-head h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    /* Make sure all boxes have proper spacing */
+    .box {
+        padding: 20px 0;
+        height: auto;
+    }
+}
+
+
+
+/* Original grid layout */
+.myskill {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(4, auto);
+    gap: 25px;
+    margin: 2vw auto;
+}
+
+/* Responsive grid layout for screens < 476px */
+@media only screen and (max-width: 476px) {
+    .myskill {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto; /* Automatic rows */
+        gap: 20px;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .skill-head {
+        grid-column: span 1; /* Only span 1 column now */
+        height: auto;
+        padding: 15px 0;
+        font-size: 24px; /* Larger font for mobile */
+    }
+
+    /* Reset all box positions to flow naturally in single column */
+    .box1, .box2, .box3, 
+    .box4, .box5, .box6,
+    .box7, .box8, .box9 {
+        grid-row-start: auto; /* Let grid auto-place items */
+        grid-column-start: auto;
+    }
+
+    .skil-box {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .skill-img {
+        height: 80px;
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    .about-skill {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .skil-box button {
+        width: 70%;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+}
+
+
+
+/* ..................................................... */
+
+@media only screen and (max-width: 476px) {
+
+    
+
+    /* Hide nav-opt by default on mobile */
+    .nav-opt {
+        display: none;
+        position: absolute;
+        top: 60px; /* Height of header */
+        right: 1vh;
+        background-color: #031f4f;
+        background-color: #ffffff90;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        flex-direction: column;
+        width: 200px;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    /* Show nav-opt when active class is added */
+    .nav-opt.active {
+        display: flex;
+    }
+
+    /* Style hamburger icon */
+    .hamburger {
+        display: block;
+        font-size: 24px;
+        color: #0048ff;
+        cursor: pointer;
+        padding: 10px;
+        margin-right: 10px;
+    }
+
+    /* Style nav-opt links for mobile */
+    .nav-opt a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        padding: 12px 15px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* Add text next to icons */
+    .nav-opt a::after {
+        content: attr(title);
+        margin-left: 10px;
+        color: #0048ff;
+    }
+
+    /* Style the HIRE ME button */
+    .spl-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hr-me button {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    /* Hide hamburger on larger screens */
+    @media only screen and (min-width: 477px) {
+        .hamburger {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "name": "Sahil's Portfolio",
+    "short_name": "Portfolio",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "description": "A portfolio website showcasing Sahil's skills, education, experience, and projects.",
+    "lang": "en",
+    "dir": "auto",
+    "theme_color": "#031f4f",
+    "background_color": "#ffffff",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "assets/icons/icon_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "assets/icons/icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "assets/screenshots/screen1.png",
+            "sizes": "2880x1800",
+            "type": "image/png",
+            "description": "Screenshot of Sahil's portfolio homepage"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "windows",
+            "url": "https://www.microsoft.com/store/apps/example"
+        }
+    ],
+    "prefer_related_applications": false,
+    "shortcuts": [
+        {
+            "name": "Skills",
+            "url": "/index.html#skills",
+            "description": "View Sahil's skills and certifications"
+        },
+        {
+            "name": "Projects",
+            "url": "/index.html#projects",
+            "description": "Explore Sahil's Excel and coding projects"
+        },
+        {
+            "name": "Experience",
+            "url": "/index.html#exp",
+            "description": "Check Sahil's professional experience details"
+        }
+    ]
+}
