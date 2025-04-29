@@ -20,7 +20,7 @@
     
     .logo {
         font-size: 20px;
-        margin-left: 5px;
+        margin-left: 15px;
     }
     
     
@@ -51,10 +51,10 @@
         justify-content: center;
         position: absolute;
         top: 50%;
+        left: -5px;
         transform: translateY(-50%);
         border-radius: 10px;
         border: 0px solid #ffffff00;
-        backdrop-filter: blur(5px);
         position: fixed;
         z-index: 1000;
     }
@@ -72,7 +72,7 @@
     }
     
     .fa-linkedin, .fa-square-facebook{
-        color: #092062;
+        color: #24449e;
         font-size: 40px;
     }
     
@@ -93,7 +93,6 @@
         flex-direction: column-reverse;
         height: auto;
         width: 100%;
-        padding: 20px 0;
     }
     
     .hero-left, .hero-right {
@@ -109,8 +108,10 @@
     }
     
     .hero-right {
-        height: 300px;
+        height: 350px;
         padding-top: 0;
+        display:flex;
+        justify-content: center;
         border: 1px solid rgba(255, 255, 255, 0);
     }
     
@@ -120,17 +121,16 @@
     }
     
     .divv{
-        position: fixed;
         height: 40vh;
         width: 40vh;
         height: 250px;
         width: 250px;
         /* background-color: #ffd500; */
         background-color: #56b6ff;
-        top: 50%;
+        /* top: 50%;
         left: 50%;
         border-radius: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
         outline-offset: 1vh;
         outline-offset: 10px;
         /* outline: 1vw dotted rgb(255, 145, 0); */
@@ -153,10 +153,8 @@
         border-radius: 50%;
         justify-content: center;
         filter: drop-shadow(0 4px 2px rgb(0, 0, 0));
-        position: relative;
         overflow: hidden;
         border: 1px solid rgba(255, 255, 255, 0);
-        top: 2.5vh;
     }
 
     /* .imgs img{
@@ -169,7 +167,7 @@
         height: 100%;
         width: 100%;
     }
-
+/* .................................................... */
     .res-down {
         width: 150px;
         height: 45px;
@@ -211,6 +209,28 @@
         font-size: 14px;
     }
     
+
+    .strd a{
+        height: auto;
+        width: auto;
+        border: none;
+    }
+    
+    .strd button{
+        height: 40px;
+        width: 120px;
+        border-radius: 0.5vh;
+        background-color: #0073ff;
+        font-size: 2.5vh;
+        color: white;
+        border: transparent;
+        position: relative;
+        z-index: 10;
+    }
+
+
+
+
     /* Experience section adjustments */
     .b2 {
         height: auto;
@@ -292,6 +312,99 @@
         background-color: #00d9ff;
     }
     
+    /* ......................................... */
+
+/* .......................................... */
+.b4{
+    background-color: rgb(255, 255, 255);
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.exl-wrks {
+    display: flex;
+    flex-direction: row;
+    /* overflow-y: hidden; */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scrollbar-width: thin; /* For modern browsers */
+    gap: 10px; /* Spacing between frames */
+    height: 96vh;
+    width: 94%;
+    height: 240px;
+    gap: 20px;
+    background-color: #c7c5c55f;
+    background: #ffffff;
+    vertical-align: middle;
+    padding: 0 2px;
+    margin: 0 auto;
+}
+
+
+
+.exl-frame {
+    /* flex: 0 0 92vw; 
+    flex: 0 0 500px; */
+    /* Ensures each frame has a fixed width */
+    height: 220px; /* Adjust as needed */
+    border: 0px solid #0051ff; /* Optional: Frame border styling */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for visual appeal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 1vh;
+    width: 100%;
+    height: fit-content;
+}
+
+.exl-title {
+    font-weight: bold;
+    text-align: center;
+    height: 5vh;
+    height: 30px;
+    display: flex;
+    background-color: #057c3f;
+    justify-content: center;
+    color: white;
+    font-size: 2vh;
+    border-top-right-radius: 1vh;
+    border-top-left-radius: 1vh;
+}
+
+
+/* 
+.exl-frame iframe{
+    height: 85vh;
+    height: 250px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom-right-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+} */
+
+.exl-frame video{
+    height: 85vh;
+    height: 200px;
+    height: max-content;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom-right-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+}
+
+
+
+.scroll-btns{
+    display: none;
+}
+
+
+
+/* ................................................. */
     /* Skills section adjustments */
     .myskill {
         grid-template-columns: 1fr;
@@ -322,6 +435,33 @@
         font-size: 14px;
     }
     
+
+    
+.skil-box a{
+    height: auto;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.skil-box button{
+    height: 7vh;
+    width: 100%;
+    border-radius: 0.5vh;
+    background-color: #0073ff;
+    font-size: 1.5vw;
+    color: white;
+    border: transparent;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+
+
     /* Footer adjustments */
     .footer {
         height: auto;
@@ -416,7 +556,7 @@
     }
 
     .skil-box button {
-        width: 70%;
+        width: 100%;
         font-size: 16px;
         margin: 10px auto;
     }
