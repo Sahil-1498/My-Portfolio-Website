@@ -1,0 +1,712 @@
+@media only screen and (min-width:500px)
+
+{
+* {
+    margin: 0vw;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+/* .............full nav bar.............*/
+.full-nav-bar {
+    width: 100%;
+    height: 7vh;
+    background-color: #131921;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;   
+}
+.border {
+    border: 0.1vw solid transparent;
+}
+.border:hover {
+    border: 0.1vw solid white;
+    border-radius: 0.2vw;
+}
+/* .............amazon logo box.............*/
+.logo-holder {
+    display: flex;
+    height: 6vh;
+    width: 7vw;
+    align-items: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    width: 6vw;
+    height: 2.5vw;
+    align-items: center;
+    margin: 0.2vw;
+    padding: 1vw 1vw 0vw 1vw;
+}
+.amazonlogo {
+    height: 100%;
+    width: 100%;
+    }
+/* .............Adress box.............*/
+.nav-address {
+    text-align: center;
+    justify-content: center;
+    align-items: justify;
+    color: white;
+    width: 6vw;
+    height: 6vh;
+    box-sizing: border-box;
+}
+.first-line {
+    width: 4vw;
+    padding-left: 0.9vw;
+    padding-right: 0vw;
+    padding-top: 0.5vw;
+    font-size: 0.6vw;
+    align-items:center;
+    text-align: center;
+}
+.second-line   {
+    width: 100%;
+    justify-content:flex-start;
+    display: flex;
+    font-size: 1vw;
+    font-weight: 700;
+    align-items: center;
+    padding-left: 0.2vw;  
+}
+/* .............Search box.............*/
+.nav-search {
+    height: 6vh;
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+.search-border {
+    height: 5.3vh;
+    width: 54vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 0.2vw solid transparent;
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
+    border: 0.2vw solid transparent;
+    box-sizing: border-box;
+    /* background-color: white; */
+}
+.search-border:hover {
+    border: 0.2vw solid rgb(254, 170, 26);
+    border-top-left-radius: 0.6vw;
+    border-bottom-left-radius: 0.6vw;    
+    border-top-right-radius: 0.6vw;
+    border-bottom-right-radius: 0.6vw;
+}
+.nav-select {
+    height: 4.7vh;
+    width: 3vw;
+    background-color: #eff0f2;
+    text-align: center;
+    margin-left: 0rem;
+    padding-left: 0.4vw;
+    font-size: 1.28vw;
+    border-top-left-radius: 0.4vw;
+    border-bottom-left-radius: 0.4vw;
+    border: none;
+    box-sizing: border-box;
+}
+.nav-select:hover {background-color: rgb(203, 203, 203);}
+.nav-search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.7vh;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0.1vw solid white;
+    outline: white;
+    font-size: 1vw;
+    padding-left: 1vw;
+}
+.search-icon-box {
+    box-sizing: border-box;
+    display: flex;
+    width: 4vw;
+    height: 4.7vh;
+    background-color: rgb(231, 171, 6);
+    border-top-right-radius: 0.4vw;
+    border-bottom-right-radius: 0.4vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    border: none;
+}
+.search-icon-box:hover {
+    background-color: rgb(207, 152, 0);
+}
+.fa-magnifying-glass {
+    align-items: center;
+    justify-content: center;
+}
+/* .............Language box.............*/
+.nav-lang-box {
+    box-sizing: border-box;
+    height: 6vh;
+    width: 6.2vw;
+    align-items: center;
+    padding: 0 0.5vw;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+.flag-logo img {
+    padding-left: 0.2vw;
+    height: 1.2vw;
+    width: 1.5vw;
+}
+.language-select {
+    height: 4vh;
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding-right:0vw;
+    font-size: 1vw;
+    font-weight: 700;
+    margin: 0vw;
+}
+/* .............Sign-in box.............*/
+.sign-in-box {
+    padding: 0 0.5vw;
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    color: white;
+}
+.sign-in {
+    margin: 0px 8px;
+}
+.nav-hello {
+    font-size: 0.6vw;
+}
+.nav-account {
+    font-size: 0.8vw;
+    font-weight: 700;
+}
+
+/* .................................... */
+.sign-in-box2 {
+    padding: 0 0.5vw;
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    color: white;
+}
+.sign-in2 {
+    margin: 0px 8px;
+}
+.nav-hello2 {
+    font-size: 0.6vw;
+}
+.nav-account2 {
+    font-size: 0.8vw;
+    font-weight: 700;
+}
+
+
+
+
+
+/* .............Cart box.............*/
+.cart-logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 6vh;
+    text-align: center;
+    padding: 0 0.5vw;
+}
+.nav-cart {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav-cart {
+    display: flex;
+    padding: 0vw 0.2vw;
+    width: 100%;
+    color: white;
+    height: 100%;
+    width: 3vw;
+    align-items: center;
+    text-align: center;
+    font-size: 2vw;
+}
+/*.....................Header2.0 areas.....................*/
+.sec-header {
+    display: flex;
+    align-items: center;
+    background-color:#37475a;
+    height: 5vh;
+    font-size: 1vw;
+    color: white;
+    position: relative;
+    top: 7vh;
+    justify-content: space-between;
+    box-sizing: border-box;  
+}
+.bnav-left {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    border: 0.1vw solid transparent;
+    height: 4.8vh;
+    box-sizing: border-box; 
+}
+.bars-all{
+    height: 4.8vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 4vw;
+    border: 0.1vw solid transparent;
+    box-sizing: border-box;
+    font-size: 1.2vw;
+    border-radius: 0.1vw;
+    text-decoration: none;
+    
+    
+}
+.alls {
+    text-decoration: none;
+    color: white;
+}
+.bars-all:hover {
+    border: 0.1vw solid white;
+    background-color: #293544 ;
+}
+
+.b-options {
+    display: flex;
+    height: 5vh;
+    align-items: center;
+}
+.bnav-options {
+    align-items: center;
+    display: flex;
+    margin: 0 1vh;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 0.5vw;
+    height: 4.8vh;
+    border: 0.1vw solid transparent;
+    box-sizing: border-box;
+    border-radius: 0.1vw;
+}
+.bnav-options:hover {
+    border: 0.1vw solid white;
+    background-color: #293544;
+}
+.bnav-right {
+    border-radius: 0.1vw;
+    margin-right: 2vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    border: 0.1vw solid transparent;
+    height: 4.8vh;
+    box-sizing: border-box;
+    font-weight: 700;
+    padding: 0 0.5vw; 
+}
+.bnav-right:hover {
+    border: 0.1vw solid white;
+    background-color: #293544;
+}
+/*.....................content areas.....................*/
+.contents-area {
+    height: 500vh;
+    background-color: aqua;
+}
+.area1 {
+    height: 400vh;
+    background-color: rgb(233, 218, 255);
+}
+.hero-area {
+    background-image: url("hero-area-img.png");
+    height: 50vh;
+    margin-left: 0;
+    margin-right: 0;
+    background-repeat: no-repeat;
+    margin-top: 7vh;
+    background-size: cover;
+}
+
+.contents {
+    height: auto;
+    background-color: #c0c0c0b7;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.product-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 10fr));
+    gap: 1vw;
+    margin: 0 auto;
+    width: 98%;
+    border: 0.3vh solid transparent;
+}
+.product-box {
+    background-color: white;
+    height: 55vh;
+    /* height: fit-content; */
+    justify-content: space-evenly;
+    border: 0.1vw solid transparent;
+    padding: 1vw 1vw;
+    
+}
+#four-grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7vw, 19vh));
+    gap: 1vw;
+    margin: 1vw;
+    place-content: center;
+    justify-content: space-evenly;
+    height: 41.5;
+    background: #ffffff;
+}
+#four-grid-box img {
+    height: 19vh;
+    width: 8vw;
+}
+
+
+
+
+.imges{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    height: 46vh;
+    margin-bottom: 1vh;
+}
+
+
+.imges img{
+    height: 40vh;
+
+}
+
+.product-box h2 {
+    font-size: 1.5vw;
+}
+.product-box img{
+    height: 90%;
+    width: 100%;
+}
+.product-box a{
+    color: #131921;
+    font-size: 1vw;
+    text-decoration: none;
+    margin-bottom: 1vw;
+    padding-bottom: 1vw;
+}
+.product-box a:hover{
+    color: #021d41;
+    font-size: 1vw;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+
+
+/*.....................Scroll-sections areas.....................*/
+.product-scrollbar-area {
+    width: 98%;
+    height: 44vh;
+    margin: 1vw;
+    background-color: #ffffff;
+}
+.scroll-headings {
+    font-size: 1.5vw;
+    margin: 0 1vw;
+    padding-top: 1vw;
+}
+.scroll-products{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1vw;
+    overflow-x: auto;
+    
+}
+.scroll-products img {
+    height: 30vh;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 1.5vw;
+}
+.spimg {
+    height: 2vh;
+    width: 25vw;
+}
+
+.scroll-products::-webkit-scrollbar {
+    height: 1vh;
+    cursor: pointer;
+    background: none;
+}
+.scroll-products::-webkit-scrollbar-track {
+    border-radius: 2vw;
+}
+.scroll-products::-webkit-scrollbar-thumb {
+    border-radius: 2vw;
+    background-color: transparent;
+}
+.scroll-products::-webkit-scrollbar-thumb:hover {
+    border-radius: 2vw;
+    background-color: #a0a0a0;
+}
+/*.....................footer areas.....................*/
+.footers {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: auto;    
+}
+/*.....................footer1 areas.....................*/
+.nav-footer1 {
+    background-color: #37475a;
+    height: 3vw;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+}
+.nav-footer1:hover {
+    background-color: #445467;
+}
+.BacktoTop {
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+.BacktoTop:hover {
+    text-decoration: underline;
+}
+/*.....................footer2 areas.....................*/
+.nav-footermain {
+    background-color: #232f3e;
+    height: fit-content;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: top;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border-bottom: 0.1vw solid white; */
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.2)  
+}
+
+.main-footer-box {
+    border: 0.1vw solid transparent;
+    height: 50vh;
+    width: 80vw;
+    margin-top: 7vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.knowus-box {
+    text-align: left;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    text-wrap: initial;
+}
+.all-main-footer-lists {    
+    list-style: none;
+    text-decoration: none;
+}
+.footer-headings {
+    font-weight: 700;
+    font-size: 1.1vw;
+    text-decoration: none;
+}
+.footer-headings:hover {
+    text-decoration: none;
+}
+.footer-lists {
+    color: #ccc;
+    padding-top: 0.9vw;
+    font-size: 1vw;
+    text-decoration: none
+}
+.fti {
+    margin-right:  1vw
+}
+.footer-lists:hover {
+    text-decoration: underline;
+}
+/*.....................footer2.1 areas.....................*/
+.nav-footermain2 {
+    background-color: #232f3e;
+    height: 10vh;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: top;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.amzlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.amzlogo img {
+    height: 3.5vh;
+}
+/*.....................footer2.2 areas.....................*/
+.lanu-and-country {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    /* justify-content: center; */
+    margin-left: 8vw;
+}
+.langu-box {
+    background-color: transparent;
+    border: 0.1vw solid white;
+    padding-left: 1vw;
+    border-radius: 0.1vw;
+    font-size: 1vw;
+    
+}
+.fa-globe {
+    font-size: 1vw;
+    color: white;
+}
+.language-footer-select {
+    background-color: transparent;
+    color: white;
+    /* border: 0.1vw solid white; */
+    height: 5vh;
+    width: 6vw;
+    margin-right: 0.3vw;
+    border: none;
+    font-size: 1vw;
+    text-align: right;
+}
+.contry-box {
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    border: 0.1vw solid white;
+    border-radius: 0.1vw;
+}
+.footer-flag {
+    display: flex;
+    align-items: center;
+    height: 3vh;
+}
+.footerflag {
+    align-items: center;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    height: 2vh;
+}
+.footer-contry {
+    width: 6vw;
+    font-size: 1vw;
+    margin-right: 1vw;
+}
+
+/*.....................footer3 areas.....................*/
+.nav-footer3 {
+    background-color: #131921;
+    height: 30vh;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    border: 0.1vh solid transparent;
+   
+}
+.foot3table {
+    text-align: left;
+    justify-content: space-around;
+    font-size: 0.9vw;
+}
+
+.blank-col {
+    width: 9vw;
+}
+.main-col:hover {
+    text-decoration: underline;
+}
+.blank-row {
+    height: 2vh;
+}
+
+/*.....................footer4 areas.....................*/
+.nav-footer4 {
+    /* background-color: #131921; */
+    height: 10vh;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    display: block;
+    justify-content: space-evenly;
+    background-color: #131921;
+}
+.term-conditions {
+    padding-top: 2vh;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    /* list-style: none; */
+}
+/* .term-conditions:hover {
+    text-decoration: underline;
+} */
+.terms {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.end-lists {
+    color: #ddd;
+    font-size: 0.9vw;
+    margin: 0vw 1vw;
+    list-style: none;
+    text-align: center;
+}
+.end-lists:hover {
+    text-decoration: underline;
+}
+.copyright {
+    margin-top: 0.3vw;
+    font-size: 0.9vw;
+    text-align: center;
+}
+/* .copyright:hover {
+    text-decoration: underline;
+} */
+}
