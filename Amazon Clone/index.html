@@ -1,518 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.json">
-    <title>SAHIL | PORFOLIO WEBSITE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="customportfoliio.css">
-    <link rel="manifest" href="mainfest.json" />
-    <!-- <link rel="stylesheet" href="screen476pxabove.css">  -->
-    <link rel="stylesheet" href="responsive.css">
-    <!-- <link rel="stylesheet" href="responsive foter.css"> -->
+    <title>Online Shopping Site - Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link class="title-img" rel="icon" href="amzn-short.png" type="image/x-icon">
+    <link rel="stylesheet" href="Amazon Desktop.css">
+
+    <link rel="stylesheet" href="Amazon Mobile.css">
 </head>
-
 <body>
-
-
-    <header>
-        <div class="logo">SAHIL</div>
-        <div class="hamburger">
+<!-- ..............................HEADER..............................-->
+<header>
+    <nav class="full-nav-bar">
+        <div class="logo-holder border">
+            <div class="logo">
+                <img class="amazonlogo" src="amazonlogo.png" alt="amazon" title="amazon.in">
+            </div>
+        </div>
+        <!-- ..........................Adress Box..........................-->
+        <div class="nav-address border">
+            <p class="first-line">Deliver to</p>
+            <div  class="second-line"><svg xmlns="http://www.w3.org/2000/svg" height="1.3vw" viewBox="0 -960 960 960" fill="#e8eaed"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+            <p>India</p></div>
+        </div>
+         <!-- ..........................Search Box..........................-->
+        <div class="nav-search">
+            <div class="search-border">
+                <select class="nav-select">
+                    <option>All Category</option>
+                </select>
+                <input type="text" class="nav-search-box" placeholder="Search Amazon.in">
+                <div class="search-icon-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ..........................Search Box..........................-->
+        <div class="nav-lang-box border">
+            <div class="flag-logo">
+                <img src="india.png" alt="">
+            </div>
+            <select class="language-select" name="" id="">
+                <option value="">EN</option>
+                <option value="">HINDI</option>
+            </select>
+        </div>
+        <!-- ..........................Sign-in Box..........................-->
+        <div class="sign-in-box border">
+            <div class="sign-in">
+                <p class="nav-hello">Hello, sign-in</p>
+                <p class="nav-account">Account & List</p>
+            </div>
+        </div>
+         <!-- ......................return-oreders Box......................-->
+         <div class="sign-in-box2 border">
+            <div class="sign-in2">
+              <p class="nav-hello2">Your Returns &</p>  
+              <p class="nav-account2">Orders</p>
+            </div>
+        </div>
+        <!-- ......................return-oreders Box......................-->
+        <div class="cart-logo-box border">
+            <div class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <!-- <img src="india.png" alt=""> -->
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- .....................Header2.0 area..................... -->
+<div class="sec-header">
+    <div class="bnav-left">
+        <div class="bars-all" id="bars-all">
             <i class="fa-solid fa-bars"></i>
+            <p>All</p>
         </div>
-        <div class="nav-opt">
-            <a href="#home" title="Home"><span class="gear-bg"><i class="fa-solid fa-house"></i></span></a>
-
-            <a href="#edu" title="Eductaion"><span class="gear-bg"><i class="fa-solid fa-graduation-cap"></i></span></a>
-
-            <a href="#exp" title="Experiance"><span class="gear-bg"><i class="fa-solid fa-briefcase"></i></span></a>
-
-            <a href="#my-codes" title="My Coding Projects"><span class="gear-bg"><i
-                        class="fa-solid fa-laptop-code"></i></span></a>
-
-            <a href="#my-files" title="My Works"><span class="gear-bg"><i
-                        class="fa-solid fa-laptop-file"></i></span></a>
-
-            <a href="#my-skills" title="My Skills"><span class="gear-bg"><i
-                        class="fa-solid fa-gear fa-spin"></i></span></a>
-            <div class="spl-btn">
-                <!-- <a href=""><i class="fa-solid fa-phone"></i></a> -->
-                <a href="mailto:sahil123tp@mail.com" class="hr-me"><button>HIRE ME</button></a>
-            </div>
-        </div>
-
-    </header>
-    <!-- ............................................................ -->
-    <div class="socio-links">
-        <a href="http://"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="http://"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://github.com/dashboard" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-        <a href="http://"><i class="fa-brands fa-square-whatsapp"></i></a>
-    </div>
-    <!-- ............................................................. -->
-
-    <section id="home" class="hero-sec" style="top: 8vh;">
-        <div class="hero-left">
-            <h1>Hi, I'm <span>Sahil</span></h1>
-            <p>I'm a <span>Data Entry Operator</span><br>
-                With my 4Years of Experience I will Handle all my work at my own.</p>
-
-            <br>
-            <p>Click the button to download My Resume.</p><br>
-            <a href="Sahil Professional Resume.pdf" target="_blank"><button class="res-down">Download
-                    Resume</button></a>
-        </div>
-
-        <div class="hero-right">
-            <div class="divv"></div>
-            <div class="imgs"><img src="sss.png" alt=""></div>
-        </div>
-
-    </section>
-    <!-- ................................................ -->
-
-    <div class="abutme"></div>
-    <!-- ................................................. -->
-    <div id="edu" class="box b1">
-        <div class="edu-title">
-            <h1>My <span class="blu"> Education</span></h1>
-        </div>
-        <div class="edu-grid">
-            <div class="strd">
-                <div class="std-head"><img src="cbse.png" alt="" height="100%" width="100%"></div>
-                <div class="dnfrm">CBSE</div>
-                <h3>10th</h3>
-                <p>2012 - 2013</p>
-                <a href="SAHIL 10TH MARKSHEET.pdf" target="_blank">
-                    <button>View Marksheet</button>
-                </a>
-            </div>
-            <div class="strd">
-                <div class="std-head"><img src="cbse.png" alt="" height="100%" width="100%"></div>
-                <div class="dnfrm">CBSE</div>
-                <h3>12th</h3>
-                <p>2014 - 2015</p>
-                <a href="Sahil12th Marksheet.pdf" target="_blank">
-                    <button>View Marksheet</button>
-                </a>
-            </div>
-            <div class="strd">
-                <div class="std-head"><img src="du.png" alt="" height="100%" width="100%"></div>
-                <div class="dnfrm">
-                    <h3>Delhi University</h3>
-                </div>
-                <h3>B.COM</h3>
-                <p>2015 - 2018</p>
-                <a href="SAHIL SOL 3RD YEAR RESULT.pdf" target="_blank">
-                    <button>View Marksheet</button>
-                </a>
-            </div>
+        <div class="b-options" id="b-options">
+            <a href="#" class="bnav-options">Fresh</a>
+            <a href="#" class="bnav-options">Amazon miniTV</a>
+            <a href="#" class="bnav-options">Sell</a>
+            <a href="#" class="bnav-options">Best Seller</a>
+            <a href="#" class="bnav-options">Today's Deals</a>
+            <a href="#" class="bnav-options">Mobiles</a>
+            <a href="#" class="bnav-options">Electronics</a>
+            <a href="#" class="bnav-options">Gift Ideas</a>
+            <a href="#" class="bnav-options">Customer Service</a>
         </div>
     </div>
-    <!-- .................................................. -->
-    <div id="exp" class="box b2">
-        <div class="exp-title">
-            <h1>My <span class="blu">Experience</span></h1>
+
+    <div class="bnav-right">
+        Great Republic Day Sale  Ends Soon
+    </div>
+</div>
+<!-- .....................content area..................... -->
+<div class="contents">
+<content-area class="contentarea">
+   <div class="hero-area">
+   </div> 
+   <!-- .......................................... -->
+   <div class="product-area">
+
+    <div class="product-box">
+        <div class="headings"><h2>Best Selling Mobiles</h2></div>
+        <div class="imges"><div id="four-grid-box">
+            <div><img class="box-images" src="y18t.png" alt=""></div>
+            <div><img class="box-images" src="y28e.png" alt=""></div>
+            <div><img class="box-images" src="y22.png" alt=""></div>
+            <div><img class="box-images" src="y18i.png" alt=""></div>
+        </div></div>
+        <div class="seemore"><a href="">See more offers</a></div>
+    </div>
+<!-- ...................................... -->
+<div class="product-box">
+    <div class="headings"><h2>Furniture</h2></div>
+    <div class="imges"><img class="box-images" src="furniture1.png" alt=""></div>
+    <div class="seemore"><a href="">See more offers</a></div>
+</div>
+
+        <div class="product-box">
+            <div class="headings"><h2>Games & Toys</h2></div>
+            <div class="imges"><div id="four-grid-box">
+                <div><img class="box-images" src="toy1.png" alt="Jeep" id="jeeptoy"   ></div>
+                <div><img class="box-images" src="toy2.png" alt=""></div>
+                <div><img class="box-images" src="toy3.png" alt=""></div>
+                <div><img class="box-images" src="toy4.png" alt=""></div>
+            </div></div>
+            <div class="seemore"><a href="">See more offers</a></div>
         </div>
 
-        <div class="exp-hold">
-            <!-- <div class="exps exp1">
-                <h3>Book Store Helper</h3>
-            </div> -->
-            <div class="exps exp2">
-                <div class="jb-logo">
-                    <img src="dataentry.png" alt="" height="100%" width="100%">
-                </div>
-                <div class="job-role">
-                    <h2>Designation : <span>Data Entry Operator</span></h2>
-                    <h3>Campany Name : <span>Shiv Dental Lab</span></h3>
-                    <p>Address : <span>WZ-111 New Sahibpura, Tilak Nagar, New Delhi</span></p>
-                    <p>Start Date : <span>25 August 2021</span></p>
-                    <p>End Date : <span>31 January 2024</span></p>
-                    <div>
-                        <h2>Key Responsibilites :</h2>
-                        <ul>
-                            <li>Maintaing Attendence Records on Excel.</li>
-                            <li>Record and update Data on regular basis.</li>
-                            <li>Generate and Print Bills on Excel.</li>
-                            <li>Disbursment of Petty Cash to Field Staff.</li>
-                        </ul>
+        <div class="product-box">
+            <div class="headings"><h2>Furniture</h2></div>
+            <div class="imges"><img class="box-images" src="furniture1.png" alt=""></div>
+            <div class="seemore"><a href="">See more offers</a></div>
+        </div>
 
-                        <h2>Skills Used :</h2>
-                        <ul>
-                            <li>Ms Excel</li>
-                            <li>Ms Mord</li>
-                            <li>Typing</li>
-                        </ul>
+
+        <div class="product-box">
+            <div class="headings"><h2>Up to 60% off | Footwear</h2></div>
+            <div class="imges"><div id="four-grid-box">
+                <div><img class="box-images" src="shoes4.png" alt="Jeep" id="jeeptoy"   ></div>
+                <div><img class="box-images" src="shoes1.png" alt=""></div>
+                <div><img class="box-images" src="shoes2.png" alt=""></div>
+                <div><img class="box-images" src="shoes3.png" alt=""></div>
+            </div></div>
+            <div class="seemore"><a href="">See more offers</a></div>
+        </div>
+
+
+        <!-- <div class="product-box">
+            <div class="headings"><h2>Up to 60% off | Footwear & handbags</h2></div>
+                <div class="imges">  <div id="four-grid-box2">
+                        <div><img class="box-images" src="shoes1.png" alt=""></div>
+                        <div><img class="box-images" src="shoes2.png" alt=""></div>
+                        <div><img class="box-images" src="shoes3.png" alt=""></div>
+                        <div><img class="box-images" src="shoes4.png" alt=""></div>
                     </div>
                 </div>
-            </div>
-            <!-- ....... -->
-            <div class="exps exp2">
-                <div class="jb-logo">
-                    <img src="bookstore.png" alt="" height="100%" width="100%">
-                </div>
-                <div class="job-role">
-                    <h2>Designation : <span>Bookstore Assistant</span></h2>
-                    <h3>Campany Name : <span>Kumar Book Depot</span></h3>
-                    <p>Address : <span>Tilak Nagar, New Delhi</span></p>
-                    <p>Start Date : <span>March 2019</span></p>
-                    <p>End Date : <span>January 2020</span></p>
-                    <div>
-                        <h2>Key Responsibilites :</h2>
-                        <ul>
-                            <li>Welcoming customers, answering 
-                                inquiries about genres, authors, and availability. </li>
-                            <li>Arranging books on 
-                                shelves systematically, restocking items.</li>
-                            <li>Keeping the bookstore clean and tidy, 
-                                ensuring books are placed correctly.</li>
-                        </ul>
+            <div class="seemore"><a href="">See more offers</a></div>
+        </div> -->
 
-                        <!-- <h2>Skills Used :</h2>
-                        <ul>
-                            <li>Ms Excel</li>
-                            <li>Ms Mord</li>
-                            <li>Typing</li>
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
-            <!-- ................ -->
+        <div class="product-box">
+            <div class="headings"><h2>Up to 40% off | Redmi Note 14</h2></div>
+            <div class="imges"><img class="box-images" src="redmen14.png" alt=""></div>
+            <div class="seemore"><a href="">See more offers</a></div>
         </div>
 
-
-    </div>
-    <!-- .................................... -->
-    <div id="my-codes" class="box b3">
-        <div class="proj-title">
-            <h1>My <span class="blu">Coding Projects</span></h1>
+        <div class="product-box">
+            <div class="headings"><h2>Up to 75% off | Headphones</h2></div>
+            <div class="imges"><img class="box-images" src="blk headphones.png" alt=""></div>
+             <div class="seemore"><a href="">See more offers</a></div>
         </div>
 
-        <div class="project-holder">
-            <div class="arowbtn">
-                <button class="left-arow-scroll"><i class="fa-solid fa-angles-left"></i></button>
-                <button class="right-arow-scroll"><i class="fa-solid fa-angles-right"></i></button>
-            </div>
+        <div class="product-box">
+            <div class="headings"><h2>Amazing deals to grab</h2></div>
+            <div class="imges"><img class="box-images" src="moto1big.png" alt=""></div>
+            <div class="seemore"><a href="">See more offers</a></div>
+        </div>
 
+       
+   </div>
 
-
-
-            <!-- .................. -->
-            <div class="projects">
-                <div class="pro-info">
-                    <h3>1. Auto Gradient Generator</h3>
-                    <p>
-                        A sleek web application designed for creating beautiful gradients effortlessly. <br> Features
-                        include:
-                    </p>
-                    <ul>
-                        <li>Auto-generation of two-color gradients</li>
-                        <li>One-click gradient code copying</li>
-                    </ul>
-                    <p>
-                        <a href="https://github.com/Sahil-1498/Gradient" target="_blank">Get Source Code on My GitHub
-                            Repository</a>
-                    </p>
-                </div>
-                <iframe src="Gradient/index.html">
-                </iframe>
-
-            </div>
-            <!-- .................. -->
-            <div class="projects amzn">
-                <div class="pro-info">
-                    <h3>2. Amazon Clone</h3>
-                    <p>
-                        A sleek web application designed for creating beautiful gradients effortlessly. <br> Features
-                        include:
-                    </p>
-                    <ul>
-                        <li>Auto-generation of two-color gradients</li>
-                        <li>One-click gradient code copying</li>
-                    </ul>
-                    <p>
-                        <a href="https://github.com/Sahil-1498/Gradient" target="_blank">Get Source Code on My GitHub
-                            Repository</a>
-                    </p>
-                </div>
-                <iframe src="Amazon Clone/index.html">
-                </iframe>
-
-            </div>
+   <!-- <div class="product-scrollbar-area">
+        <h1 class="scroll-headings">Blockbuster Deals</h1>
+        <div class="scroll-products">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            <img src="y22.png" alt="">
+            
 
         </div>
-        <!-- .................. -->
+   </div> -->
 
-
-
+   <div class="product-scrollbar-area">
+    <h1 class="scroll-headings">Blockbuster Deals</h1>
+    <div class="scroll-products">
+        <img src="img for amazon/1.png" alt="">
+        <img src="img for amazon/2.png" alt="">
+        <img src="img for amazon/3.png" alt="">
+        <img src="img for amazon/4.png" alt="">
+        <img src="img for amazon/5.png" alt="">
+        <img src="img for amazon/6.png" alt="">
+        <img src="img for amazon/7.png" alt="">
+        <img src="img for amazon/8.png" alt="">
+        <img src="img for amazon/9.png" alt="">
+        <img src="img for amazon/10.png" alt="">
+        <img class="spimg" src="img for amazon/11.png" alt="">
+        <img src="img for amazon/12.png" alt="">
+        <img class="spimg" src="img for amazon/13.png" alt="">
+        <img src="img for amazon/14.png" alt="">
+        <img src="img for amazon/15.png" alt="">
+        <img src="img for amazon/16.png" alt="">
+        <img src="img for amazon/17.png" alt="">
+        <img src="img for amazon/18.png" alt="">
+        <img src="img for amazon/19.png" alt="">
+        <img src="img for amazon/20.png" alt="">
     </div>
 
-    <!-- ..................................................... -->
+    <!-- <div class="product-area">
+        <div class="product-box">
+            <h2>choose where you left</h2>
+            <img class="box-images" src="y18i.png" alt="">
+            <a href="">See more offers</a>
+        </div>
 
+        <div class="product-box">
+            <h2>choose where you left</h2>
+            <img class="box-images" src="y18i.png" alt="">
+            <a href="">See more offers</a>
+        </div>
 
+        <div class="product-box">
+            <h2>choose where you left</h2>
+            <img class="box-images" src="y18i.png" alt="">
+            <a href="">See more offers</a>
+        </div>
 
+        <div class="product-box">
+            <h2>choose where you left</h2>
+            <img class="box-images" src="y18i.png" alt="">
+            <a href="">See more offers</a>
+        </div>
+
+        <div class="product-box">
+            <h2>choose where you left</h2>
+            <img class="box-images" src="y18i.png" alt="">
+            <a href="">See more offers</a>
+        </div>
+
+        <div class="product-box">
+            <h2>choose where you left</h2>
+            <img class="box-images" src="y18i.png" alt="">
+            <a href="">See more offers</a>
+        </div>
+
+        <div class="product-box">
+            <h2>choose where you left</h2>
+            <img class="box-images" src="y18i.png" alt="">
+            <a href="">See more offers</a>
+        </div>
+
+        <div class="product-box">
+            <h2>choose where you left</h2>
+            <img class="box-images" src="y18i.png" alt="">
+            <a href="">See more offers</a>
+        </div>
+
+    </div> -->
+
+    
+</content-area>
+</div>
+
+<!-- .....................footer area..................... -->
+ <footer class="footers">
+    <div class="nav-footer1">
+        <a href="#" class="BacktoTop">Back to Top</a>
     </div>
-    <!-- .................................. -->
-    <div id="my-files" class="box b4">
-        <div class="proj-title">
-            <h1>My <span class="blu">Excel Projects</span></h1>
-        </div>
-
-        <div class="scroll-btns">
-            <button class="left-scroll"><i class="fa-solid fa-circle-arrow-left"></i></button>
-            <button class="right-scroll"><i class="fa-solid fa-circle-arrow-right"></i></button>
-        </div>
-
-        <div class="exl-wrks">
-
-            <div class="exl-frame">
-                <div class="exl-title">Automatic Data Entry Form</div>
-                <!-- <iframe src="https://drive.google.com/file/d/1klJiAk5HgzeUf6xFAqaK4v2Xx9B92VB2/preview" frameborder="0"></iframe> -->
-                <video autoplay loop muted onloadedmetadata="this.playbackRate=2.0">
-                    <source src="Automatic Excel Form.mp4" type="video/mp4">
-
-                    <!-- Provide alternative text in case the video cannot be played -->
-                    Your browser does not support the video tag.
-                </video>
+    <div class="nav-footermain">
+        <div class="main-footer-box">
+            <div class="knowus-box">
+                <ul class="all-main-footer-lists">
+                    <p class="footer-headings">Get to Know Us</p>
+                    <li class="footer-lists">About Amazon</li>
+                    <li class="footer-lists">Career</li>
+                    <li class="footer-lists">Press Release</li>
+                    <li class="footer-lists">Amazon Science</li>
+                </ul>
             </div>
-            <div class="exl-frame">
-                <div class="exl-title">Auto Sales Invoice</div>
-                <video autoplay loop muted onloadedmetadata="this.playbackRate=2.0">
-                    <source src="Auto Sales Invoice.mp4" type="video/mp4">
-
-                    <!-- Provide alternative text in case the video cannot be played -->
-                    Your browser does not support the video tag.
-                </video>
-
-            </div>
-            <div class="exl-frame">
-                <div class="exl-title">Excel File 1</div>
-                <video autoplay loop muted onloadedmetadata="this.playbackRate=2.0">
-                    <source src="" type="video/mp4">
-
-                    <!-- Provide alternative text in case the video cannot be played -->
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <!-- Add more as needed -->
-        </div>
-    </div>
-
-    <!-- ........................... -->
-    <div id="my-skills" class="grid-holder b5">
-        <div class="myskill">
-            <div class="skill-head">
-                <h1>My <span class="blu"> Skills</span></h1>
-            </div>
-
-            <div class="skil-box box1">
-                <div class="skill-img">
-                    <img src="comp.png" alt="" height="100%" width="100%">
-                </div>
-                <div class="about-skill">
-                    <h2>Basic Computer</h2>
-                    <p>
-                        Sahil
-                    </p>
-                </div>
-                <a href="" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-
-            <div class="skil-box box2">
-                <div class="skill-img">
-                    <img src="exl.png" alt="" height="90%" width="100%">
-                </div>
-                <div class="about-skill">
-                    <h2>MS Excel</h2>
-                    <p>
-                        Sahil
-                    </p>
-                </div>
-                <a href="SAHIL LEARN MORE EXCEL CIRTIFICATE wirh photo.pdf" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-
-            <div class="skil-box box3">
-                <div class="skill-img">
-                    <img src="tprime.png" alt="" height="110%" width="130%">
-                </div>
-                <div class="about-skill">
-                    <h2>Tally Prime</h2>
-                    <p>
-                        Sahil
-                    </p>
-                </div>
-                <a href="" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-
-
-
-            <div class="skil-box box4">
-                <div class="skill-img">
-                    <img src="pbi.png" alt="" height="100%" width="120%">
-                </div>
-                <div class="about-skill">
-                    <h2>Power BI</h2>
-                    <p>
-                        Sahil
-                    </p>
-                </div>
-                <a href="Power BI Ceritificate.pdf" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-
-            <div class="skil-box box5">
-                <div class="skill-img">
-                    <img src="pgsql.png" alt="" height="90%" width="100%">
-                </div>
-                <div class="about-skill">
-                    <h2>Postgre SQL</h2>
-                    <p>
-                        Sahil
-                    </p>
-                </div>
-                <a href="" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-
-            <div class="skil-box box6">
-                <div class="skill-img">
-                    <img src="html.png" alt="" height="85%" width="70%">
-                </div>
-                <div class="about-skill">
-                    <h2>HTML</h2>
-                    <p>
-                        Sahil
-                    </p>
-                </div>
-                <a href="" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-
-            <div class="skil-box box7">
-                <div class="skill-img">
-                    <img src="css.png" alt="" height="95%" width="100%">
-                </div>
-                <div class="about-skill">
-                    <h2>CSS</h2>
-                    <p>
-                        Sahil
-                    </p>
-                </div>
-                <a href="" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-
-            <div class="skil-box box8">
-                <div class="skill-img">
-                    <img src="js.png" alt="" height="100%" width="130%">
-                </div>
-                <div class="about-skill">
-                    <h2>JavaScript</h2>
-                    <p>
-                        Sahil
-                    </p>
-                </div>
-                <a href="" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-
-            <div class="skil-box box9">
-                <div class="skill-img">
-                    <img src="mystry.png" alt="" height="90%" width="90%">
-                </div>
-                <div class="about-skill">
-                    <h2>Next Skill ?</h2>
-                    <p>
-                        Coming soon ...
-                    </p>
-                </div>
-                <a href="" target="_blank">
-                    <button>View Certificate</button>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- ...................................................... -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h2 class="logo">SAHIL</h2>
-                <p class="tagline">Data Entry Specialist | Web Developer</p>
-                <div class="footer-social">
-                    <a href="http://" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="http://" target="_blank" aria-label="Facebook"><i
-                            class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://github.com/dashboard" target="_blank" aria-label="GitHub"><i
-                            class="fa-brands fa-square-github"></i></a>
-                    <a href="http://" target="_blank" aria-label="WhatsApp"><i
-                            class="fa-brands fa-square-whatsapp"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-links">
-                <div class="links-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
-                        <li><a href="#edu"><i class="fa-solid fa-chevron-right"></i> Education</a></li>
-                        <li><a href="#exp"><i class="fa-solid fa-chevron-right"></i> Experience</a></li>
-                        <li><a href="#my-codes"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+            <div class="connectus-box">
+                <div class="knowus-box">
+                    <ul class="all-main-footer-lists">
+                        <p class="footer-headings">Connect with Us</p>
+                        <li class="footer-lists"><i class="fa-brands fa-facebook fti"></i>Facebook</li>
+                        <li class="footer-lists"><i class="fa-brands fa-twitter fti"></i>Twitter</li>
+                        <li class="footer-lists"><i class="fa-brands fa-instagram fti"></i>Instagram</li>
+                        <!-- <li class="footer-lists"></li> -->
                     </ul>
                 </div>
-
-                <div class="links-column">
-                    <h3>My Skills</h3>
-                    <ul>
-                        <li><a href="#my-skills"><i class="fa-solid fa-chevron-right"></i> MS Excel</a></li>
-                        <li><a href="#my-skills"><i class="fa-solid fa-chevron-right"></i> Power BI</a></li>
-                        <li><a href="#my-skills"><i class="fa-solid fa-chevron-right"></i> HTML/CSS</a></li>
-                        <li><a href="#my-skills"><i class="fa-solid fa-chevron-right"></i> JavaScript</a></li>
+            </div>
+            <div class="moneyus-box">
+                <div class="knowus-box">
+                    <ul class="all-main-footer-lists">
+                        <p class="footer-headings">Make Money with Us</p>
+                        <li class="footer-lists">Sell on Amzon</li>
+                        <li class="footer-lists">Sell under Amazon Accelerator</li>
+                        <li class="footer-lists">Protect and Build Your Brand</li>
+                        <li class="footer-lists">Amazon Global Selling</li>
+                        <li class="footer-lists">Supply to Amazon</li>
+                        <li class="footer-lists">Become an Affiliate</li>
+                        <li class="footer-lists">Fulfilment by Amazon</li>
+                        <li class="footer-lists">Advertise Your Products</li>
+                        <li class="footer-lists">Amazon Pay on Merchants</li>
                     </ul>
                 </div>
-
-                <div class="links-column col3">
-                    <h3>Contact Me</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-envelope"></i> sahil123tp@mail.com</li>
-                        <li><i class="fa-solid fa-phone"></i> +91 8130605023</li>
-                        <li><i class="fa-solid fa-location-dot"></i> New Delhi, India</li>
+            </div>
+            <div class="helpyou-box">
+                <div class="knowus-box">
+                    <ul class="all-main-footer-lists">
+                        <p class="footer-headings">Let Us Help You</p>
+                        <li class="footer-lists">Your Account</li>
+                        <li class="footer-lists">Returns Centre</li>
+                        <li class="footer-lists">Recalls and Product Safety Alerts</li>
+                        <li class="footer-lists">100% Purchase Protection</li>
+                        <li class="footer-lists">Amazon App Download Help</li>
+                        <li class="footer-lists">Help</li>
                     </ul>
                 </div>
             </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 SAHIL. All rights reserved.</p>
-            <div class="legal-links">
-                <a href="#">Privacy Policy</a>
-                <span>|</span>
-                <a href="#">Terms of Service</a>
+    </div>
+    <!-- .....................footer2 area..................... -->
+    <div class="nav-footermain2">
+        <div class="amzlogo"><a href=""><img src="amazonlogo.png" alt=""></a></div>
+        <div class="lanu-and-country">
+            <div class="langu-box">
+                <i class="fa-solid fa-globe"></i>
+                <select class="language-footer-select" name="" id="">
+                    <option value=""><i class="fa-solid fa-globe"></i> English</option>
+                    <option value="">Hindi</option>
+                </select>
+            </div>
+            <div class="contry-box">
+                <div class="footer-flag"><img src="india.png" alt="" class="footerflag"></div>
+                <span class="footer-contry">India</span>
             </div>
         </div>
-    </footer>
+    </div>
+    <!-- .....................footer3 area..................... -->
+    <div class="nav-footer3">
+        <table class="foot3table">
+            <th class="main-col">Abe Books</th>
+            <th class="blank-col"></th>
+            <th class="main-col">Amazon Web Services</th>
+            <th class="blank-col"></th>
+            <th class="main-col">Audible</th>
+            <th  class="blank-col"></th>
+            <th class="main-col">IMDb</th>
+            <tr>
+                <td class="main-col">Books, art <br>& collections</td>
+                <td></td>
+                <td class="main-col">Scalable Cloud <br>Computing Services</td>
+                <td></td>
+                <td class="main-col">Download <br>Audio Books</td>
+                <td></td>
+                <td class="main-col">Movies, TV <br>& Celebrities</td>
+            </tr>
+            <tr class="blank-row"></tr>
+            <th class="main-col">Shopbop</th>
+            <th class="blank-col"></th>
+            <th class="main-col">Amazon Busines</th>
+            <th class="blank-col"></th>
+            <th class="main-col">Prime Now</th>
+            <th class="blank-col"></th>
+            <th class="main-col">Amazon Prime Music</th>
+            <tr>
+                <td class="main-col">Designer <br>Fashion Brands</td>
+                <td></td>
+                <td class="main-col">Everything For <br>Your Business</td>
+                <td></td>
+                <td class="main-col">2-Hour Delivery on <br>Everyday Items</td>
+                <td></td>
+                <td class="main-col">100 million songs, ad-free <br>Over 15 million podcast episodes</td>
+            </tr>
+        </table>
+    </div>
+    <!-- .....................footer4 area..................... -->
+    <div class="nav-footer4">
+        <div class="term-conditions">
+            <ul class="terms">
+                <li class="end-lists">Conditions of Use & Sale</li>
+                <li class="end-lists">Privacy Notice</li>
+                <li class="end-lists">Interest-Based Ads</li>
+            </ul>
+        </div>
+        <p class="copyright">© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+
+    </div>
+ </footer>
 
 
 
 
 
-    <!-- ............................................................. -->
-    <script src="customportfolio.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="Amazon.js"></script>
 </body>
-
 </html>
