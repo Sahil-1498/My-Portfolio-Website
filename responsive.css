@@ -101,12 +101,50 @@
     }
     
     .hero-left {
-        height: 300px;
+        height: 370px;
         font-size: 16px;
         text-align: center;
         padding-top: 30px;
     }
     
+
+    .hero-left h1, h1 span{
+        font-size: 20px;
+    }
+
+    /* .hero-left{
+        height: 98%;
+        width: 69%;
+        background: #ffffff00;
+        padding-top: 10vh;
+        padding-left: 7vh;
+        color: white;
+        font-size: 1.8vw;
+    } */
+    
+    .auto-write {
+        font-size: 14px;
+        height: 170px;
+        width: 80%;
+        white-space: pre-line; /* Yeh multiline type hone dega */
+        border-right: 3px solid rgba(0, 0, 0, 0);
+        text-align: justify;
+        display: inline-block;
+        overflow: hidden;
+        outline: 1px solid rgba(255, 255, 255, 0);
+    }
+    
+    @keyframes blink {
+        50% { border-color: transparent; }
+    }
+
+
+
+
+
+
+
+
     .hero-right {
         height: 350px;
         padding-top: 0;
@@ -247,10 +285,16 @@
     
     .exps {
         width: 95%;
-        height: auto;
+        height: 540px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 20px;
     }
     
+  
+
+
     .jb-logo {
         height: 200px;
     }
@@ -258,6 +302,11 @@
     .job-role {
         height: auto;
         padding: 15px;
+    }
+
+
+    .jbr2{
+        height: 320px;
     }
     
     /* Projects section adjustments */
@@ -545,6 +594,7 @@
         height: auto;
     }
 }
+
 
 
 
