@@ -571,7 +571,7 @@ h1 span{
    position: relative;
    flex-direction: column;
    justify-content: center;
-   height: 120vh;
+   height: 130vh;
    gap: 2vw;
 }
 
@@ -680,7 +680,6 @@ h1 span{
     font-size: 1.4vw;
     font-weight: 500;
     color: #5a80e1;
-    padding-left: 1.5vw;
     text-decoration: none;
 }
 
@@ -689,6 +688,20 @@ h1 span{
     height: 85vh;
     width: 83.5vw;
 }
+
+.pro-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-around;
+    height: 300px;
+    border-top: 3px dashed #0b59c7;
+}
+
+
+
+
 
 
 /* .......................................... */
