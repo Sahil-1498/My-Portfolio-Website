@@ -15,7 +15,34 @@
         });
     });
 
+// ............................
 
+const text = `With 4 years of experience, I bring precision, efficiency, and problem-solving skills. 
+From maintaining accurate records to developing innovative solutions, I take pride in delivering work that is both structured and impactful. 
+My passion for technology keeps me constantly evolving, learning new skills, and refining my expertise.`;
+
+        let index = 0;
+        const typingSpeed = 50; // Adjust typing speed in milliseconds
+        const delayBeforeRestart = 15000; // 30 seconds before restarting effect
+
+        function typeText() {
+            document.getElementById("text").innerHTML = text.substring(0, index);
+            index++;
+
+            if (index <= text.length) {
+                setTimeout(typeText, typingSpeed);
+            } else {
+                setTimeout(() => {
+                    index = 0;
+                    typeText();
+                }, delayBeforeRestart); // Restart effect after 30 sec
+            }
+        }
+
+        typeText();
+
+
+// ..............................
     document.addEventListener('DOMContentLoaded', function() 
     {
         const projectHolder = document.querySelector('.project-holder');
