@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil - 10th Marksheet</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .certificate-container {
+            background-color: #fff9e6; /* Light yellowish tint like the original */
+            width: 800px;
+            padding: 40px;
+            border: 10px double #d4af37;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            margin-bottom: 20px;
+        }
+        .header h1 { margin: 5px; font-size: 22px; color: #1a3a5f; }
+        .header h2 { margin: 5px; font-size: 18px; }
+        
+        .student-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .info-item { font-weight: bold; }
+        .info-value { border-bottom: 1px dotted #000; padding-left: 10px; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        th { background-color: #f2f2f2; }
+        .subject-name { text-align: left; }
+
+        .cgpa-section {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            color: #d32f2f;
+        }
+
+        .footer {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature {
+            text-align: center;
+            border-top: 1px solid #000;
+            width: 150px;
+            font-size: 12px;
+            padding-top: 5px;
+        }
+        .result-status {
+            text-align: center;
+            font-weight: bold;
+            color: green;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<div class="certificate-container">
+    <div class="header">
+        <h1>CENTRAL BOARD OF SECONDARY EDUCATION, DELHI</h1>
+        <h2>Secondary School Examination (Session: 2011-13)</h2>
+        <h3>Grade Sheet cum Certificate of Performance</h3>
+    </div>
+
+    <div class="student-info">
+        <div><span class="info-item">Name:</span> <span class="info-value">SAHIL</span></div>
+        <div><span class="info-item">Roll No:</span> <span class="info-value">8739090</span></div>
+        <div><span class="info-item">Mother's Name:</span> <span class="info-value">LOKESH</span></div>
+        <div><span class="info-item">Father's Name:</span> <span class="info-value">GULSHAN</span></div>
+        <div><span class="info-item">Date of Birth:</span> <span class="info-value">14/02/1998</span></div>
+        <div><span class="info-item">School:</span> <span class="info-value">61229 GOVT COED SEC SCHOOL, VIKAS PURI</span></div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Subject Code & Name</th>
+                <th colspan="3">Class X Grades</th>
+            </tr>
+            <tr>
+                <th>FA</th>
+                <th>SA</th>
+                <th>Grade Point (GP)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="subject-name">184 ENGLISH LNG & LIT.</td>
+                <td>B1</td>
+                <td>C2</td>
+                <td>07</td>
+            </tr>
+            <tr>
+                <td class="subject-name">002 HINDI COURSE-A</td>
+                <td>B1</td>
+                <td>C1</td>
+                <td>07</td>
+            </tr>
+            <tr>
+                <td class="subject-name">041 MATHEMATICS</td>
+                <td>B2</td>
+                <td>D</td>
+                <td>06</td>
+            </tr>
+            <tr>
+                <td class="subject-name">086 SCIENCE</td>
+                <td>A2</td>
+                <td>C2</td>
+                <td>07</td>
+            </tr>
+            <tr>
+                <td class="subject-name">087 SOCIAL SCIENCE</td>
+                <td>B2</td>
+                <td>C1</td>
+                <td>07</td>
+            </tr>
+            <tr>
+                <td class="subject-name">122 COMM. SANSKRIT</td>
+                <td>B2</td>
+                <td>C2</td>
+                <td>07</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="cgpa-section">
+        Cumulative Grade Point Average (CGPA): 6.8
+    </div>
+
+    <div class="result-status">
+        Result: QUALIFIED FOR ADMISSION TO HIGHER CLASSES
+    </div>
+
+    <div class="footer">
+        <div class="signature">Principal Signature</div>
+        <div>Dated: 30/05/2013</div>
+        <div class="signature">Controller of Examinations</div>
+    </div>
+</div>
+
+</body>
+</html>
