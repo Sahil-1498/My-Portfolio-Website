@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CBSE Marksheet</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 10px; /* Mobile ke liye padding kam ki */
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Responsive Main Card */
+        .marksheet-card {
+            width: 100%;
+            max-width: 850px; /* Desktop par limit rahegi */
+            background-color: #e6f3f0;
+            border: 3px solid #008080;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            box-sizing: border-box;
+            margin: auto;
+        }
+
+        /* Watermark: Responsive Size */
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%; 
+            height: 60%;
+            background-image: url('logo.png'); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.3; /* Visibility thodi optimize ki */
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #004d4d;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: clamp(16px, 5vw, 22px); /* Text screen ke hisab se chota-bada hoga */
+            letter-spacing: 1px;
+        }
+
+        /* Info Section - Responsive Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 10px;
+            font-family: 'VT323', monospace;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            flex-wrap: wrap; 
+        }
+
+        .label { width: 130px; }
+        .value { font-weight: bold; text-transform: uppercase; }
+
+        /* Responsive Table Wrapper */
+        .table-container {
+            width: 100%;
+            overflow-x: auto; /* Mobile par scroll bar aayega */
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            width: 100%;
+            min-width: 600px; /* Table ko sikadne se bachane ke liye */
+            border-collapse: collapse;
+            border: 2px solid #008080;
+            margin-top: 10px;
+            background-color: rgba(230, 243, 240, 0.01);
+        }
+
+        th, td {
+            border: 1px solid #008080;
+            padding: 8px;
+            font-family: 'VT323', monospace;
+            font-size: 17px;
+            text-align: left;
+            background : transparent;
+        }
+
+        /* Footer Responsive */
+        .footer {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap; /* Mobile par signature niche aa jayega */
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .info-grid {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="marksheet-card">
+        <div class="watermark"></div>
+
+        <div class="content">
+            <div class="header">
+                <h1>CENTRAL BOARD OF SECONDARY EDUCATION</h1>
+                <h2 style="font-size: 18px; border-bottom: 2px solid #008080; display: inline-block;">MARKS STATEMENT</h2>
+                <p><b>SENIOR SCHOOL CERTIFICATE EXAMINATION, 2015</b></p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-item"><span class="label">Name:</span> <span class="value">SAHIL</span></div>
+                <div class="info-item"><span class="label">Roll No:</span> <span class="value">9708400</span></div>
+                <div class="info-item"><span class="label">Father's Name:</span> <span class="value">GULSHAN</span></div>
+                <div class="info-item"><span class="label">School:</span> <span class="value">GOVT BOYS SR SEC SCHOOL VIKASPURI</span></div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SUB CODE</th>
+                            <th>SUBJECT NAME</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>TOTAL</th>
+                            <th>GRADE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>301</td><td>ENGLISH CORE</td><td>061</td><td>XXX</td><td>061</td><td>C2</td></tr>
+                        <tr><td>002</td><td>HINDI ELECTIVE</td><td>084</td><td>XXX</td><td>084</td><td>A1</td></tr>
+                        <tr><td>030</td><td>ECONOMICS</td><td>066</td><td>XXX</td><td>066</td><td>B2</td></tr>
+                        <tr><td>054</td><td>BUSINESS STUDIES</td><td>049</td><td>020</td><td>069</td><td>C1</td></tr>
+                        <tr><td>055</td><td>ACCOUNTANCY</td><td>057</td><td>020</td><td>077</td><td>B1</td></tr>
+                        <tr><td>048</td><td>PHYSICAL EDUCATION</td><td>034</td><td>029</td><td>063</td><td>C2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="footer">
+                <div>
+                    <div style="font-family: 'VT323', monospace; font-size: 22px; font-weight: bold;">Result: PASS</div>
+                    <p style="font-size: 13px;">Date: 25-05-2015<br>Place: Delhi</p>
+                </div>
+                <div style="text-align: center; min-width: 200px;">
+                    <p style="border-top: 1px solid #008080; margin-top: 40px; padding-top: 5px; font-size: 14px;">Controller of Examinations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
